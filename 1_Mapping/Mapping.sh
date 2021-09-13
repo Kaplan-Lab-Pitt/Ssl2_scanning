@@ -8,7 +8,7 @@
 #SBATCH --output=out%j.out
 #SBATCH --error=err%j.err
 
-# This is the script used to map the sequencing reads to yeast genome by library. By Tingting Zhao.
+# This is the script used to map the sequencing reads to yeast genome by library.
 # To run on Pitt supercomputing system: sbatch .sh
 # Input: fastq
 # Output: stranded bedgraph, .err, .out.

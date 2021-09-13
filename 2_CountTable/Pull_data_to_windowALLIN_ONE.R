@@ -1,4 +1,3 @@
-# Syntax: Rscript Pull_data_to_windowALLIN_ONE.R bedgraph gff
 
 input <- commandArgs(trailingOnly = TRUE)
 
@@ -31,4 +30,3 @@ for(w in 1:dim(gff)[1])
 }
 
 write.table(output_file,"temp5.txt",row.names=FALSE,col.names=FALSE,sep=",")
-

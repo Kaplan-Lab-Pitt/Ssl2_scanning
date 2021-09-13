@@ -1,7 +1,7 @@
-## Syntax: bash Pull_data_to_windowALLIN_ONE.sh <gff file> <plus.bedgraph> <minus.bedgraph>
+# Syntax: bash Pull_data_to_windowALLIN_ONE.sh <gff file> <plus.bedgraph> <minus.bedgraph>
 
-## This script is to take a gff (window file), plus strand bedgraph and minus strand bedgraph to generate a 5979x401 matrix (5979 promoters, 401 positions).
-## This script has to work with Pull_data_all_in_one.R in the same directory (not in the same PATH directory).
+# This script is to take a gff (window file), plus strand bedgraph and minus strand bedgraph to generate a 5979x401 matrix (5979 promoters, 401 positions).
+# This script has to work with Pull_data_to_windowALLIN_ONE.R in the same directory.
 
 awk 'BEGIN{FS=OFS="\t"}{print $1,$4,$5,$7}' $1 > temp1.txt
 awk 'BEGIN{FS=OFS="\t"}{$5="+"}{print}' $2 > temp2.txt

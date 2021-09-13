@@ -1,5 +1,5 @@
 # Syntax: Rscript spread_THRESHOLDED_counts.R <count table.csv>
-# calculates spread, positions of 10th and 90th percentile reads in count table and position with median reads in count table from a csv TSS reads file.
+# Calculates spread, positions of 10th and 90th percentile reads in count table and position with median reads in count table from a csv TSS reads file.
 
 
 args=(commandArgs(TRUE))
