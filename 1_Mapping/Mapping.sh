@@ -3,7 +3,7 @@
 #SBATCH --job-name=TSS_mut
 #SBATCH -N 1
 #SBATCH --ntasks-per-node=4
-#SBATCH --time=0-24:00:00                     # 6 days walltime in dd-hh:mm format
+#SBATCH --time=0-24:00:00                     
 #SBATCH --mem=64g
 #SBATCH --output=out%j.out
 #SBATCH --error=err%j.err
